@@ -1,15 +1,9 @@
 import React from "react";
-import Navbar from "../components/Navbar";
-import Hero from "../components/Hero";
-
 
 const LandingPage: React.FC = () => {
     return (
         <>
-            <div>
-                <Navbar />
-                {/* <Hero /> */}
-            </div>
+            <h1>This is landing page coming soon...</h1>
         </>
     )
 };

@@ -1,12 +1,8 @@
-import './App.css'
-
 function App() {
 
   return (
     <>
-      <div className='text-3xl font-bold underline'>
-        <h1>Project working fine With Tailwind CSS</h1>
-      </div>
+      <h1 className='text-3xl font-bold underline'>Project working fine With Tailwind CSS</h1>
     </>
   )
 }
