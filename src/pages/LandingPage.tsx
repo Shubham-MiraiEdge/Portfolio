@@ -1,9 +1,14 @@
 import React from "react";
+import Navbar from "../components/Navbar";
+import Hero from "../components/Hero";
+import AboutSection from "../components/AboutSection";
 
 const LandingPage: React.FC = () => {
     return (
         <>
-            <h1>This is landing page coming soon...</h1>
+            <Navbar />
+            <Hero />
+            <AboutSection />
         </>
     )
 };
