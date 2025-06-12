@@ -23,7 +23,7 @@ const Hero: React.FC = () => {
           </div>
         </div>
   
-        <div className="hidden md:block absolute bottom-50 right-6">
+        <div className="hidden md:block absolute bottom-50 right-0">
           <EllipseImageSection />
         </div>
       </section>

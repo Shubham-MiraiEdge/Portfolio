@@ -9,17 +9,17 @@ const ellipseImageData: string[] = [Ellipse1, Ellipse2, Ellipse3, Ellipse4]
 
 const EllipseImageSection: React.FC = () => {
     return (
-        <div className="block max-w-100">
-            <div className="flex items-center bg-transparent">
+        <div className="block max-w-100 lg:mr-20">
+            <div className="flex justify-end items-center bg-transparent">
                 <div className="flex items-center gap-[-10px] px-3 py-1 rounded-full border-2 border-blue-700 bg-cover bg-center">
                     {ellipseImageData?.map((imgPath: string, index: number) => (
-                        <img key={index} src={imgPath} alt="Profile 2" className="w-20 h-20 rounded-full -ml-4 first:ml-0" />
+                        <img key={index} src={imgPath} alt="Profile 2" className="w-20 h-20 rounded-full -ml-6 first:ml-0" />
                     ))}
                 </div>
             </div>
-            <div>
-                <p className="text-lg font-normal">
-                    We’re committed to delivering a high-quality experience in a welcoming and supportive atmosphere
+            <div className="flex justify-end mt-5">
+                <p className="text-lg font-normal text-right">
+                    We’re committed to delivering a high-<br/> quality experience in a welcoming and <br/>supportive atmosphere
                 </p>
             </div>
         </div>
