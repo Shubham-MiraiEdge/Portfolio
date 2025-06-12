@@ -1,7 +1,7 @@
-import MainButton from "./common/MainButton";
-import RedirectButton from "./common/RedirectButton";
-import indoorImg from "../assets/swimmingImg.jpg"
-import outdoorImg from "../assets/basketballImg.jpg"
+import MainButton from "@components/common/MainButton";
+import RedirectButton from "@components/common/RedirectButton";
+import indoorImg from "@assets/swimmingImg.jpg"
+import outdoorImg from "@assets/basketballImg.jpg"
 
 
 const AboutSection: React.FC = () => {

@@ -1,6 +1,6 @@
-import heroIMG from "../assets/hero_img.png";
-import MainButton from "./common/MainButton";
-import EllipseImageSection from "./EllipseImageSection";
+import MainButton from "@components/common/MainButton";
+import EllipseImageSection from "@components/EllipseImageSection";
+import heroIMG from "@assets/hero_img.png";
 
 const Hero: React.FC = () => {
     return (

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Menu, X, Search } from "lucide-react";
 
-import RedirectButton from "./common/RedirectButton";
+import RedirectButton from "@components/common/RedirectButton";
 
 const Navbar: React.FC = ()=> {
   
@@ -19,16 +19,13 @@ const Navbar: React.FC = ()=> {
               <a href="#" className="text-base font-normal text-white hover:underline">Facilities</a>
               <a href="#" className="text-base font-normal text-white hover:underline">Membership</a>
             </div>
-
-            <div className="flex justify-center border border-white items-center gap-4 p-5 backdrop-blur-md text-white boader boader-white rounded-full">
+            <div className="flex justify-center border border-white items-center gap-4 p-5 backdrop-blur-md text-white rounded-full">
               <input type="text" placeholder="Search here..." className="w-32 text-base font-normal outline-none" />
               <div>
                 <Search />
               </div>
             </div>
-
             <RedirectButton dark={true} title="Book now"/>
-
           </nav>
 
           {/* Mobile menu button */}
