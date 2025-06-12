@@ -1,13 +1,13 @@
 import { useState } from "react";
 import { Menu, X, Search } from "lucide-react";
+
 import RedirectButton from "./common/RedirectButton";
 
-
 const Navbar: React.FC = ()=> {
+  
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="">
       <header className="absolute top-0 left-0 w-full z-50">
         <div className="flex items-center justify-between p-4 md:p-6 mx-auto">
           <div className="text-white text-2xl font-bold">LOUVER <span className="font-light">SPORT</span></div>
@@ -15,9 +15,9 @@ const Navbar: React.FC = ()=> {
           {/* Desktop nav */}
           <nav className="hidden md:flex space-x-6 items-center">
             <div className="space-x-6 flex items-center backdrop-blur-md rounded-full p-5">
-              <a className="text-base font-normal text-white hover:underline">About Us</a>
-              <a className="text-base font-normal text-white hover:underline">Facilities</a>
-              <a className="text-base font-normal text-white hover:underline">Membership</a>
+              <a href="#" className="text-base font-normal text-white hover:underline">About Us</a>
+              <a href="#" className="text-base font-normal text-white hover:underline">Facilities</a>
+              <a href="#" className="text-base font-normal text-white hover:underline">Membership</a>
             </div>
 
             <div className="flex justify-center border border-white items-center gap-4 p-5 backdrop-blur-md text-white boader boader-white rounded-full">
@@ -46,7 +46,6 @@ const Navbar: React.FC = ()=> {
           </div>
         )}
       </header>
-    </div>
   );
 };
 
