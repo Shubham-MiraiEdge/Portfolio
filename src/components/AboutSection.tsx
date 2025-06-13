@@ -1,10 +1,10 @@
 import React from "react";
-import MainButton from "./common/MainButton";
-import RedirectButton from "./common/RedirectButton";
-import indoorImg from "../assets/swimmingImg.jpg";
-import outdoorImg from "../assets/basketballImg.jpg";
-import PageButton from "./common/PageButton";
 
+import MainButton from "@components/common/MainButton";
+import RedirectButton from "@components/common/RedirectButton";
+import PageButton from "@components/common/PageButton";
+import indoorImg from "@assets/swimmingImg.jpg";
+import outdoorImg from "@assets/basketballImg.jpg";
 
 const AboutSection: React.FC = () => {
     return (
@@ -47,7 +47,7 @@ const AboutSection: React.FC = () => {
                         </div>
                     </div>
                     <div className="flex justify-center items-center gap-3 mt-6">
-                        <p className="text-base text-gray-500">Discover your new - favourite place - to play, train, and compete.</p>
+                        <p className="text-base text-gray-500">Discover your new - favorite place - to play, train, and compete.</p>
                         <div className="flex items-center gap-2">
                             <div className="border border-gray-400 py-2 px-3 rounded-full">
                                 <PageButton direction="left"/>

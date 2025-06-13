@@ -6,7 +6,7 @@ interface PageButtonProps {
     onClick?: () => void;
 }
 
-const PageButton: React.FC<PageButtonProps> = ({ side = 'right', onClick = () => {} }) => {
+const PageButton: React.FC<PageButtonProps> = ({ direction = 'right', onClick = () => {} }) => {
     return (
         <button
             className=""
