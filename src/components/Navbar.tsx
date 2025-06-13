@@ -45,7 +45,7 @@ const Navbar: React.FC = ()=> {
 
         {/* Mobile dropdown menu */}
         {menuOpen && (
-          <div className="md:hidden bg-white absolute w-40 right-4 mt-2 rounded shadow">
+          <div className="md:hidden bg-white absolute w-40 top-25 right-4 mt-2 rounded shadow">
             <a className="block text-base font-normal text-black px-4 py-2 hover:bg-black hover:text-white">About Us</a>
             <a className="block text-base font-normal text-black px-4 py-2 hover:bg-black hover:text-white">Facilities</a>
             <a className="block text-base font-normal text-black px-4 py-2 hover:bg-black hover:text-white">Membership</a>

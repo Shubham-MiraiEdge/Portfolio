@@ -19,7 +19,7 @@ const EllipseImageSection: React.FC = () => {
             </div>
             <div className="flex justify-end mt-5">
                 <p className="text-lg font-normal text-right">
-                    We’re committed to delivering a high-<br/> quality experience in a welcoming and <br/>supportive atmosphere
+                    We’re committed to delivering a high-quality experience in a welcoming and supportive atmosphere
                 </p>
             </div>
         </div>
