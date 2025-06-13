@@ -5,6 +5,7 @@ import AboutSection from "../components/AboutSection";
 import FacilitiesSection from "../components/FacilitiesSection";
 import ExperienceSection from "../components/ExperienceSection";
 import GetInTouchSection from "../components/GetInTouchSection";
+import TestimonialSection from "../components/TestimonialSection";
 
 const LandingPage: React.FC = () => {
     return (
@@ -15,6 +16,7 @@ const LandingPage: React.FC = () => {
             <FacilitiesSection />
             <ExperienceSection />
             <GetInTouchSection />
+            <TestimonialSection />
         </>
     )
 };
