@@ -6,16 +6,14 @@ interface PageButtonProps {
     onClick?: () => void;
 }
 
-const PageButton: React.FC<PageButtonProps> = ({ direction='right', onClick }) => {
+const PageButton: React.FC<PageButtonProps> = ({ side = 'right', onClick = () => {} }) => {
     return (
-        <>
         <button
             className=""
             onClick={onClick}
         >
             { direction === "right" ? (<ArrowRight color="gray"/>) : (<ArrowLeft color="gray"/>)}
         </button>
-        </>
     )
 };
 

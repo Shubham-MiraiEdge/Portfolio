@@ -1,6 +1,6 @@
-import heroIMG from "../assets/hero_img.png";
-import MainButton from "./common/MainButton";
-import EllipsImageSection from "./EllipsImageSection";
+import MainButton from "@components/common/MainButton";
+import EllipseImageSection from "@components/EllipseImageSection";
+import heroIMG from "@assets/hero_img.png";
 
 const Hero: React.FC = () => {
     return (
@@ -10,8 +10,7 @@ const Hero: React.FC = () => {
           backgroundImage: `url(${heroIMG})`,
         }}
       >
-
-        <div className="max-w-xl z-10">
+        <div className="max-w-xl z-10 mt-50 md:mt-0">
           <div className="mb-5">
             <MainButton title="Sport Center" />
           </div>
@@ -20,12 +19,12 @@ const Hero: React.FC = () => {
           </p>
   
           <div className="block md:hidden mt-8">
-            <EllipsImageSection />
+            <EllipseImageSection />
           </div>
         </div>
   
-        <div className="hidden md:block absolute bottom-6 right-6">
-          <EllipsImageSection />
+        <div className="hidden md:block absolute bottom-45 right-0">
+          <EllipseImageSection />
         </div>
       </section>
     );

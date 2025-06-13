@@ -24,7 +24,9 @@ const AboutSection: React.FC = () => {
                     className="relative w-full md:w-1/2 rounded-xl overflow-hidden bg-cover bg-center h-96 flex flex-col justify-between p-4 text-white"
                     style={{ backgroundImage: `url(${indoorImg})` }}
                 >
-                    <MainButton title="Indoor Area" />
+                    <div>
+                        <MainButton title="Indoor Area" />
+                    </div>
                     <div className="flex justify-between items-center">
                         <p className="font-semibold text-sm">Versatile space for a wide range of activities</p>
                         <RedirectButton />
@@ -33,10 +35,12 @@ const AboutSection: React.FC = () => {
 
                 <div className="relative w-full md:w-1/2">
                     <div
-                        className=" rounded-xl overflow-hidden bg-cover bg-center h-64 flex flex-col justify-between p-4 text-white"
+                        className="rounded-xl overflow-hidden bg-cover bg-center h-64 flex flex-col justify-between p-4 text-white"
                         style={{ backgroundImage: `url(${outdoorImg})` }}
                     >
-                        <MainButton title="Outdoor Area" />
+                        <div>
+                            <MainButton title="Outdoor Area" />
+                        </div>
                         <div className="flex items-center justify-between">
                             <p className="font-bold text-lg">Futsal Court</p>
                             <RedirectButton dark={true} />
