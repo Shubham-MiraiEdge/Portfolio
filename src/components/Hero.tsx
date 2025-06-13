@@ -10,7 +10,7 @@ const Hero: React.FC = () => {
           backgroundImage: `url(${heroIMG})`,
         }}
       >
-        <div className="max-w-xl z-10">
+        <div className="max-w-xl z-10 mt-50 md:mt-0">
           <div className="mb-5">
             <MainButton title="Sport Center" />
           </div>
@@ -23,7 +23,7 @@ const Hero: React.FC = () => {
           </div>
         </div>
   
-        <div className="hidden md:block absolute bottom-50 right-0">
+        <div className="hidden md:block absolute bottom-45 right-0">
           <EllipseImageSection />
         </div>
       </section>
