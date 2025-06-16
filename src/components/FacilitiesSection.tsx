@@ -1,14 +1,13 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 
-
-import MainButton from "./common/MainButton";
-import RedirectButton from "./common/RedirectButton";
-import FacilityCard from "./common/FacilityCard";
-import PageButton from "./common/PageButton";
-import Facilities01 from "../assets/FacilitiesImg/Facilities01.jpg";
-import Facilities02 from "../assets/FacilitiesImg/Facilities02.jpg";
-import Facilities03 from "../assets/FacilitiesImg/Facilities03.jpg";
-import Facilities04 from "../assets/FacilitiesImg/Facilities04.jpg";
+import MainButton from "@components/common/MainButton";
+import RedirectButton from "@components/common/RedirectButton";
+import PageButton from "@components/common/PageButton";
+import FacilityCard from "@components/common/FacilityCard";
+import Facilities01 from "@assets/FacilitiesImg/Facilities01.jpg";
+import Facilities02 from "@assets/FacilitiesImg/Facilities02.jpg";
+import Facilities03 from "@assets/FacilitiesImg/Facilities03.jpg";
+import Facilities04 from "@assets/FacilitiesImg/Facilities04.jpg";
 
 interface FacilitiesData {
     title: string;
@@ -46,16 +45,16 @@ const facilitiesData: FacilitiesData[] = [
 
 const FacilitiesSection = () => {
     return (
-        <section className='px-4 sm:px-6 py-8 sm:py-12'>
+        <section className='md:px-[44px] md:py-12'>
             <div className="flex flex-col gap-4 lg:flex-row lg:justify-between lg:items-center">
-                <div className="flex flex-col lg:flex-row lg:items-center gap-5">
-                    <MainButton dark={true} title='Facilities' />
-                    <p className="text-3xl text-black">Explore Our Facilities</p>
+                <div className="flex flex-col lg:flex-row lg:items-center gap-9">
+                    <MainButton title='Facilities' className="ml-[2px] px-[20px] py-[12px]" />
+                    <p className="text-4xl text-black">Explore Our Facilities</p>
                 </div>
-                <RedirectButton dark={true} title='Explore Our Facilities' />
+                <RedirectButton title='view all' className="bg-black text-white px-[12px] py-[15px]" />
             </div>
 
-            <div className='mt-10'>
+            <div className='md:mt-10'>
                 <Swiper
                     spaceBetween={20}
                     breakpoints={{
@@ -88,16 +87,12 @@ const FacilitiesSection = () => {
 
             <div className="flex flex-col-reverse lg:flex-row justify-between items-center mt-10 gap-6">
                 <div className="flex gap-3">
-                    <div className="border border-gray-400 py-2 px-3 rounded-full">
-                        <PageButton direction="left" />
-                    </div>
-                    <div className="border border-gray-400 py-2 px-3 rounded-full">
-                        <PageButton direction="right" />
-                    </div>
+                    <PageButton direction="left" className="p-5"/>
+                    <PageButton direction="right" className="p-5" />
                 </div>
-                <div className="w-full lg:w-1/2 text-center lg:text-left">
-                    <p className="text-lg text-gray-500">
-                        Book a court for focused practice, team drills, or private coaching, and take your game to the next level.
+                <div className="md:w-[500px] text-center lg:text-right">
+                    <p className="text-xl text-gray-500 md:w-[500px]">
+                        Book a court for focused practice, Team drills, or private coaching, and take your game to the next level
                     </p>
                 </div>
             </div>
