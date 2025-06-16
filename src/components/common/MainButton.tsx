@@ -2,14 +2,14 @@ import React from 'react';
 
 interface MainButtonProps {
     title?: string;
-    dark?: boolean;
+    className?: string;
     onClick?: () => void;
 }
 
-const MainButton: React.FC<MainButtonProps> = ({ title = '', dark = false, onClick = () => {} }) => {
+const MainButton: React.FC<MainButtonProps> = ({ title = '', className = '', onClick = () => {} }) => {
     return (
         <button
-            className={`${dark ? 'text-black border-gray-500' : 'text-white border-white'} text-base font-normal border rounded-full p-3`}
+            className={`text-sm font-medium border rounded-full ${className}`}
             onClick={onClick}
         >
             {title}

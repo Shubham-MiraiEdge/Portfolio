@@ -8,54 +8,50 @@ import outdoorImg from "@assets/basketballImg.jpg";
 
 const AboutSection: React.FC = () => {
     return (
-        <section className="flex flex-col lg:flex-row items-start justify-between px-6 py-12 gap-8">
-            <div className="lg:w-1/3 space-y-6 h-96">
-                <MainButton dark={true} title="About Louvre" />
-                <h2 className="text-3xl font-light mt-10">
+        <section className="flex flex-col lg:flex-row w-full items-start justify-between mt-0 md:mt-19 px-[44px] py-12 gap-5">
+            <div className="flex flex-col justify-between w-full">
+                <div>
+                    <MainButton title="About Louvre" className="px-[25px] py-[16px] border border-[#D2D2D2]" />
+                </div>
+                <h2 className="text-[34px] font-light mt-4">
                     At Louvre sport center, we’re passionate about providing a top-notch environment for athletes of all levels.
                 </h2>
-                <div className="mt-10 lg:mt-24">
-                    <RedirectButton dark={true} title="Get in Touch" />
+                <div className="mt-14">
+                    <RedirectButton dark={true} title="Get in Touch" className="px-[22px] py-[17px] bg-black text-white" />
                 </div>
             </div>
-
-            <div className="flex flex-col md:flex-row gap-6 lg:w-2/3">
+            <div
+                className="rounded-3xl flex flex-col justify-between bg-cover bg-center h-[388px] mt-5 md:mt-0 w-full box-border py-[24px] text-white"
+                style={{ backgroundImage: `url(${indoorImg})` }}
+            >
+                <div className="ml-[40px]">
+                    <MainButton title="Indoor Area" className="px-[23px] py-[10px] backdrop-blur-md" />
+                </div>
+                <div className="flex justify-between items-center px-[40px] gap-4">
+                    <p className="text-xl font-medium">
+                        Versatile space for a wide range of activities
+                    </p>
+                    <RedirectButton className="bg-white text-black p-[15px]" />
+                </div>
+            </div>
+            <div className="w-full">
                 <div
-                    className="relative w-full md:w-1/2 rounded-xl overflow-hidden bg-cover bg-center h-96 flex flex-col justify-between p-4 text-white"
-                    style={{ backgroundImage: `url(${indoorImg})` }}
+                    className="rounded-3xl h-[228px] w-full bg-cover bg-center flex flex-col justify-between text-white"
+                    style={{ backgroundImage: `url(${outdoorImg})` }}
                 >
-                    <div>
-                        <MainButton title="Indoor Area" />
+                    <div className="ml-[30px] mt-[25px]">
+                        <MainButton title="Outdoor Area" className="px-[15px] text-xs py-[10px] backdrop-blur-md" />
                     </div>
-                    <div className="flex justify-between items-center">
-                        <p className="font-semibold text-sm">Versatile space for a wide range of activities</p>
-                        <RedirectButton />
+                    <div className="flex items-center justify-between px-[32px] pb-[25px]">
+                        <p className="font-bold text-xl">Futsal Court</p>
+                        <RedirectButton className="bg-black text-white p-[12px]" />
                     </div>
                 </div>
-
-                <div className="relative w-full md:w-1/2">
-                    <div
-                        className="rounded-xl overflow-hidden bg-cover bg-center h-64 flex flex-col justify-between p-4 text-white"
-                        style={{ backgroundImage: `url(${outdoorImg})` }}
-                    >
-                        <div>
-                            <MainButton title="Outdoor Area" />
-                        </div>
-                        <div className="flex items-center justify-between">
-                            <p className="font-bold text-lg">Futsal Court</p>
-                            <RedirectButton dark={true} />
-                        </div>
-                    </div>
-                    <div className="flex justify-center items-center gap-3 mt-6">
-                        <p className="text-base text-gray-500">Discover your new - favorite place - to play, train, and compete.</p>
-                        <div className="flex items-center gap-2">
-                            <div className="border border-gray-400 py-2 px-3 rounded-full">
-                                <PageButton direction="left"/>
-                            </div>
-                            <div className="border border-gray-400 py-2 px-3 rounded-full">
-                                <PageButton direction="right"/>
-                            </div>
-                        </div>
+                <div className="flex justify-center items-center w-full gap-5 mt-6">
+                    <p className="text-lg font-normal text-gray-500">Discover your new - favorite place - to play, train, and compete.</p>
+                    <div className="flex items-center gap-2">
+                        <PageButton direction="left" className="p-[10px]" />
+                        <PageButton direction="right" className="p-[10px]" />
                     </div>
                 </div>
             </div>

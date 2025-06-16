@@ -25,7 +25,7 @@ const Navbar: React.FC = ()=> {
                 <Search color="gray"/>
               </div>
             </div>
-            <RedirectButton dark={true} title="Book now"/>
+            <RedirectButton title="Book now" className="py-[19px] px-[28px] bg-black text-white" />
           </nav>
 
           {/* Mobile menu button */}
