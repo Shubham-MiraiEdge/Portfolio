@@ -3,7 +3,6 @@ import { ArrowUpRight } from "lucide-react";
 
 interface RedirectButtonProps {
     title?: string;
-    dark?: boolean;
     className?: string;
     onClick?: () => void;
 }
