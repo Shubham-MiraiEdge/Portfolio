@@ -8,7 +8,7 @@ import outdoorImg from "@assets/basketballImg.jpg";
 
 const AboutSection: React.FC = () => {
     return (
-        <section className="flex flex-col lg:flex-row w-full items-start justify-between mt-0 md:mt-19 px-[44px] py-12 gap-5">
+        <section className="flex flex-col lg:flex-row w-full items-start justify-between mt-0 md:mt-19 px-[15px] md:px-[44px] py-12 gap-5">
             <div className="flex flex-col justify-between w-full">
                 <div>
                     <MainButton title="About Louvre" className="px-[25px] py-[16px] border border-[#D2D2D2]" />
