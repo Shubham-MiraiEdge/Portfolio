@@ -17,7 +17,7 @@ const AboutSection: React.FC = () => {
                     At Louvre sport center, we’re passionate about providing a top-notch environment for athletes of all levels.
                 </h2>
                 <div className="mt-14">
-                    <RedirectButton dark={true} title="Get in Touch" className="px-[22px] py-[17px] bg-black text-white" />
+                    <RedirectButton title="Get in Touch" className="px-[22px] py-[17px] bg-black text-white" />
                 </div>
             </div>
             <div
