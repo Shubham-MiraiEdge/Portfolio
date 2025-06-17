@@ -10,7 +10,7 @@ interface FacilityCardProps {
 const FacilityCard: React.FC<FacilityCardProps> = ({ title, description, imgUrl, redirectIcon=false }) => {
     return (
         <div
-            className="relative w-full h-[450px] sm:h-[500px] md:h-[525px] rounded-2xl overflow-hidden bg-cover bg-center"
+            className="relative w-full h-[560px] md:h-[525px] rounded-2xl overflow-hidden bg-cover bg-center"
             style={{ backgroundImage: `url(${imgUrl})` }}
         >
             <div className="absolute top-[10px] left-[12px] bg-white/20 backdrop-blur text-white px-[10px] py-[10px] rounded-full border border-white text-base">

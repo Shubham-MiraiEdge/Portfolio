@@ -45,16 +45,20 @@ const facilitiesData: FacilitiesData[] = [
 
 const FacilitiesSection = () => {
     return (
-        <section className='md:px-[44px] md:py-12'>
+        <section className='px-[15px] md:px-[44px] py-12'>
             <div className="flex flex-col gap-4 lg:flex-row lg:justify-between lg:items-center">
                 <div className="flex flex-col lg:flex-row lg:items-center gap-9">
-                    <MainButton title='Facilities' className="ml-[2px] px-[20px] py-[12px]" />
+                    <div>
+                        <MainButton title='Facilities' className="ml-[2px] px-[20px] py-[12px]" />
+                    </div>
                     <p className="text-4xl text-black">Explore Our Facilities</p>
                 </div>
-                <RedirectButton title='view all' className="bg-black text-white px-[12px] py-[15px]" />
+                <div>
+                    <RedirectButton title='view all' className="bg-black text-white px-[12px] py-[15px]" />
+                </div>
             </div>
 
-            <div className='md:mt-10'>
+            <div className='mt-10'>
                 <Swiper
                     spaceBetween={20}
                     breakpoints={{
